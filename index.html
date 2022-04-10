@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>POST API</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="h1 text-center mt-5 mb-3">User API</h2>
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Users</h3>
+                <p class="m-0 mb-3 text-center">Count of user: <span class="user__count text-danger">3</span></p>
+                <ul class="user__list m-0 p-0"></ul>
+               
+            </div>
+            <div class="col border-end border-start">
+                <h3 class="text-center">Posts</h3>
+                <p class="m-0 mb-3 text-center">Count of posts: <span class="post__count text-danger">3</span></p>
+                <ul class="post__list m-0 p-0"></ul>
+                
+            </div>
+            <div class="col">
+                <h3 class="text-center">Comments</h3>
+                <p class="m-0 mb-3 text-center">Count of comments: <span class="comment__count text-danger">3</span></p>
+                <ul class="comment__list m-0 p-0"></ul>
+                
+            </div>
+        </div>
+
+        <template id="user-template">
+            <li class=" list-unstyled border border-2 rounded border-info mb-1 p-2">
+                <p class="user__username m-0 mark"><a href="#"><strong>Umid Sattorov</strong> </a></p>
+                <p class="m-0">Email: <span class="user__email">salom@gmail.com</span></p>
+                <p class="m-0">Country: <span class="user__country">salom@gmail.com</span></p>
+                <p class="m-0">Company: <span class="user__company">salom@gmail.com</span></p>
+                <p class="m-0">Website: <a class="user__website" href="#">salom@gmail.com</a></p>
+            </li>
+        </template>
+
+        <template id="post-template">
+            <li class=" list-unstyled border border-2 rounded border-info mb-1 p-2">
+                <a class="post__username m-0" href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos vel rerum tempora sit illum repellendus</a>
+                <p class="m-0">Post: <span class="post__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quasi, laboriosam quisquam dicta exercitationem sed nulla.</span></p>
+            </li>
+        </template>
+
+        <template id="comment-template">
+            <li class=" list-unstyled border border-2 rounded border-info mb-1 p-2">
+                <p class="m-0">Title: <span class="comment__title">salom@gmail.com</span></p>
+                <p class="m-0 ">Email: <span class="comment__email">salom@gmail.com</span></p>
+                <p class="m-0">Comment: <span class="comment__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita.</span></p>
+            </li>
+        </template>
+    </div>
+
+
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
